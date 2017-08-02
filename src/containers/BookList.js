@@ -4,28 +4,33 @@ import { selectBook }  from '../actions/index';
 //make sure action created flows through all reducers
 import { bindActionCreators } from 'redux';
 
-
-
 class BookList extends Component {
+  constructor(){
+    super();
+  }
   render() {
 
     //must create a map function here to return the following:
 
-
-    // ******************
-    //
     //     <li
     //       key={book.id}
     //       onClick={() => this.props.selectBook(book)}
     //       className="list-group-item">{book.title}</li>
-    //
-    // ******************
 
-    return (
-      <ul className="list-group col-sm-4">
-        {/* return your mapped array list items here */}
-      </ul>
-    );
+    let books = this.props.books.map((book, index)=>{
+      return (
+        <ul className="list-group col-sm-4">
+          <li key={index} onClick={ () => this.props.selectBook(book)}>{book.title}</li>
+        </ul>
+      )
+    })
+    return(
+      <div>
+        <ul>
+          {books}
+        </ul>
+      </div>
+    )
   }
 }
 
