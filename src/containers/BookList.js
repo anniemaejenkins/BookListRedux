@@ -26,9 +26,7 @@ class BookList extends Component {
     })
     return(
       <div>
-        <ul>
           {books}
-        </ul>
       </div>
     )
   }

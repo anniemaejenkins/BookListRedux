@@ -15,7 +15,6 @@ const ActiveBook = (state = null, action) => {
     return action.payload
   }
   return state;
-
 }
 
 // can never return a mutated state in reducers..must be fresh state or original
