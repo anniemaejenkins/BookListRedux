@@ -1,6 +1,49 @@
+@font-face {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+  background-color: #90C86E;
+}
 .App {
   text-align: center;
 }
+.instructions{
+  color: #513115;
+  font-family: 'Pacifico';
+}
+.listName{
+  background-color: #90C86E;
+  color: #513115;
+  font-family: 'Pacifico';
+  margin: 0;
+  padding-top: 40px;
+  height: 80px;
+}
 .list-group{
   list-style: none;
+  background-color: #E2EFDA;
+  margin: 0;
+  padding: 10px 25px;
+}
+li{
+  margin: 10px;
+  padding: 5px 0;
+  border-radius: 5px;
+  background-color: #CAEDB5;
+  font-family: 'Pacifico';
+  color: #513115;
+}
+.container{
+  background-color: #E2EFDA;
+  padding: 10px;
+}
+.col-lg-4{
+  background-color: #CAEDB5;
+  font-family: 'Pacifico';
+  color: #513115;
+  border-radius: 5px;
+  margin: 10px 100px;
+  padding: 10px;
 }

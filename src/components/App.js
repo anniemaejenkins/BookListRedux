@@ -9,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Cool Books!</h1>
+        <h1 className="listName">Cool Books!</h1>
         <BookList />
         <BookDetail />
       </div>
